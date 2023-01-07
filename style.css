@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+/* #input{
+      color: white;
+      margin: 100px auto;
+      font-size: 30px;
+  } */
+.box {
+  /* height: 100%;
+  width: 50vh;  */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  /* position: relative; */
+  background-color: black;
+  border-radius: 40px;
+}
+/* img{
+  position: absolute;
+  top:10px;
+  right: 20px;
+  width: 25%;
+  } */
+p {
+  display: none;
+}
+.container {
+  color: white;
+  min-height: 90px;
+  min-width: 60px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: repeat(5, 80px);
+  gap: 10px;
+  justify-content: center;
+  /* padding: 150px 20px 20px 20px; */
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.item {
+  background-color: #333333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.lightgrey {
+  background-color: #a5a5a5;
+  color: black;
+}
+.orange {
+  background-color: #f1a33c;
+}
+.zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 50px;
+  display: flex;
+  justify-content: left;
+  padding-left: 25px;
+}
+.item9 {
+}
+@media screen and (max-width: 480px) {
+  .box {
+    display: none;
+  }
+  p {
+    display: block;
+    color: red;
+  }
+}
